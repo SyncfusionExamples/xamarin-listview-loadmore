@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="EmptyXmlFile.xml" />
+    <None Remove="LoadMore\Apple.jpg" />
+    <None Remove="LoadMore\Apricot.jpg" />
+    <None Remove="LoadMore\Banana.jpg" />
+    <None Remove="LoadMore\Cherry.jpg" />
+    <None Remove="LoadMore\CustardApple.jpg" />
+    <None Remove="LoadMore\Dragon.jpg" />
+    <None Remove="LoadMore\Grapes.jpg" />
+    <None Remove="LoadMore\Guava.jpg" />
+    <None Remove="LoadMore\Jackfruit.jpg" />
+    <None Remove="LoadMore\Kiwi.jpg" />
+    <None Remove="LoadMore\Lemon.jpg" />
+    <None Remove="LoadMore\Lime.jpg" />
+    <None Remove="LoadMore\Mango.jpg" />
+    <None Remove="LoadMore\Orange.jpg" />
+    <None Remove="LoadMore\Papaya.jpg" />
+    <None Remove="LoadMore\Peaches.jpg" />
+    <None Remove="LoadMore\Pear.jpg" />
+    <None Remove="LoadMore\Pineapple.jpg" />
+    <None Remove="LoadMore\Pomegranate.jpg" />
+    <None Remove="LoadMore\Raspberry.jpg" />
+    <None Remove="LoadMore\Strawberry.jpg" />
+    <None Remove="LoadMore\Watermelon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LoadMore\Apple.jpg" />
+    <EmbeddedResource Include="LoadMore\Apricot.jpg" />
+    <EmbeddedResource Include="LoadMore\Banana.jpg" />
+    <EmbeddedResource Include="LoadMore\Cherry.jpg" />
+    <EmbeddedResource Include="LoadMore\CustardApple.jpg" />
+    <EmbeddedResource Include="LoadMore\Dragon.jpg" />
+    <EmbeddedResource Include="LoadMore\Grapes.jpg" />
+    <EmbeddedResource Include="LoadMore\Guava.jpg" />
+    <EmbeddedResource Include="LoadMore\Jackfruit.jpg" />
+    <EmbeddedResource Include="LoadMore\Kiwi.jpg" />
+    <EmbeddedResource Include="LoadMore\Lemon.jpg" />
+    <EmbeddedResource Include="LoadMore\Lime.jpg" />
+    <EmbeddedResource Include="LoadMore\Mango.jpg" />
+    <EmbeddedResource Include="LoadMore\Orange.jpg" />
+    <EmbeddedResource Include="LoadMore\Papaya.jpg" />
+    <EmbeddedResource Include="LoadMore\Peaches.jpg" />
+    <EmbeddedResource Include="LoadMore\Pear.jpg" />
+    <EmbeddedResource Include="LoadMore\Pineapple.jpg" />
+    <EmbeddedResource Include="LoadMore\Pomegranate.jpg" />
+    <EmbeddedResource Include="LoadMore\Raspberry.jpg" />
+    <EmbeddedResource Include="LoadMore\Strawberry.jpg" />
+    <EmbeddedResource Include="LoadMore\Watermelon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.1.0.53" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update=".xaml.cs">
+      <DependentUpon>.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>
